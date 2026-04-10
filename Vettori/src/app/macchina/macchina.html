@@ -1,1 +1,14 @@
-<p>{{ nomeMacchina }}</p>
+<article class="card h-100 card-macchina border-0 shadow-sm">
+  <div class="card-header card-header-cantiere">
+    <h2 class="h5 mb-0">{{ nomeMacchina }}</h2>
+  </div>
+
+  <div class="card-body">
+    <p class="mb-2 text-uppercase etichetta-pezzi">Pezzi della macchina</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item px-0 item-pezzo" *ngFor="let pezzo of pezziMacchina">
+        {{ pezzo }}
+      </li>
+    </ul>
+  </div>
+</article>

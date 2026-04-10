@@ -1,23 +1,24 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Macchina } from '../macchina/macchina';
 
 @Component({
   selector: 'app-container',
-  imports: [Macchina],
+  imports: [CommonModule, Macchina],
   templateUrl: './container.html',
   styleUrl: './container.css',
 })
 export class Container {
   readonly macchineDaCantiere: string[] = [
-    'Escavatore',
+    'Escavatore cingolato',
     'Pala gommata',
     'Autobetoniera',
-    'Rullo compressore',
+    'Rullo compattatore',
     'Gru a torre',
-    'Minipala',
-    'Betoniera',
-    'Dump truck',
+    'Miniescavatore',
+    'Dumper',
     'Sollevatore telescopico',
-    'Bobcat',
+    'Fresatrice stradale',
+    'Perforatrice idraulica',
   ];
 }

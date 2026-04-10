@@ -1,0 +1,27 @@
+.card-macchina {
+  background-color: #f8f9fa;
+  border: 1px solid #d8d8d8;
+}
+
+.card-header-cantiere {
+  background: linear-gradient(90deg, #e35d04 0%, #c1121f 100%);
+  color: #ffffff;
+  border-bottom: 0;
+}
+
+.etichetta-pezzi {
+  color: #495057;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.item-pezzo {
+  background-color: transparent;
+  border-bottom: 1px dashed #c9c9c9;
+  color: #343a40;
+}
+
+.item-pezzo:last-child {
+  border-bottom: 0;
+}

@@ -1,3 +1,12 @@
-@for (macchina of macchineDaCantiere; track macchina) {
-	<app-macchina [nomeMacchina]="macchina"></app-macchina>
-}
+<section class="container py-4 py-md-5">
+  <header class="mb-4 text-center text-md-start">
+    <h1 class="titolo-cantiere mb-2">Parco Macchine da Cantiere</h1>
+    <p class="sottotitolo-cantiere mb-0">Elenco mezzi disponibili e principali pezzi interni.</p>
+  </header>
+
+  <div class="row g-3 g-lg-4">
+    <div class="col-12 col-md-6 col-xl-4" *ngFor="let macchina of macchineDaCantiere">
+      <app-macchina [nomeMacchina]="macchina"></app-macchina>
+    </div>
+  </div>
+</section>
