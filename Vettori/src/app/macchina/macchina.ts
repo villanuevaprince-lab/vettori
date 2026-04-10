@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-macchina',
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './macchina.html',
   styleUrl: './macchina.css',
 })
-export class Macchina {}
+export class Macchina {
+  @Input() nomeMacchina = '';
+}
